@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lib/materialize/css/materialize.css">
+
+    <script src="./lib/materialize/js/materialize.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="airplane-cont" class="row valign">
+
+            <div class="col valign right" id="airplave-toggle">
+                <div class="switch valign">
+                    <label>
+                        <img class="airplane-img" src="./assets/turn-airplane-mode-off.svg" />
+                        <input class="valign" type="checkbox">
+                        <span class="lever"></span>
+                        <img class="airplane-img" src="./assets/airplane-mode-on-symbol.svg" />
+
+                    </label>
+                </div>
+            </div>
+            <!-- Airplane-cont    -->
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Score -->
+                <div class="col center s12">
+                    <div class="row">
+                        <div class="col s6 center"> <h5 style="color:#00e1ff" id="score"> Score : 0</h5></div>
+                        <div class="col s6 center ">  <h5 style="color:#ff834a" id="life"> ❤ x3</h5></div>
+                    </div>
+                </div>
+                <!-- Score End -->
+                <!-- Question -->
+                <div class="col  s12 center justify">
+                    <div id="question-cont">
+                        <h1 id="question">
+                            99 + 99
+                        </h1>
+
+                    </div>
+
+                </div>
+                <!-- Question End -->
+
+
+
+            </div>
+            <!-- Progress Bar -->
+            <div class="progress" id="progress-bar-cont">
+                <div class="determinate purple" id="progress-bar"></div>
+            </div>
+
+            <!-- Options -->
+            <div class="col center">
+                <div class=" center justify">
+                    <div class=" option-cont" onclick="optionA();">
+                        <h5 id="option-A">4</h5>
+                    </div>
+                    <div class=" option-cont" onclick="optionB();">
+                        <h5 id="option-B">4</h5>
+                    </div>
+                    <div class="option-cont" onclick="optionC();">
+                        <h5 id="option-C">4</h5>
+                    </div>
+                    <div class="option-cont" onclick="optionD();">
+                        <h5 id="option-D">4</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Main cont -->
+    </div>
+</body>
+<script defer src="./main.js"></script>
+
+</html>

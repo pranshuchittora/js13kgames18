@@ -1,0 +1,53 @@
+*{
+    color: #fff;
+}
+body
+{
+    padding-top: 20px;
+    background: #1f1f1f;
+    
+}
+#airplane-cont
+{
+    padding-top: 10px;
+    height: 40px;
+    vertical-align: middle;
+}
+.airplane-img
+{
+    margin-bottom: -5px;
+    height: 20px;
+}
+
+/* Question Container */
+#question-cont
+{
+    justify-content: center;
+    text-align: center;
+  
+    border: 2px solid #27ffa5;
+    border-radius: 15px;
+
+}
+
+.option-cont
+{
+    border: 1px solid rgb(218, 255, 6);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 20px;
+    min-width: 100px; 
+    text-align: center;
+    justify-items: center;
+    display: inline-block;
+}
+#progress-bar-cont{
+    margin:30px 0px 20px 0px;
+    height: 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+#progress-bar
+{
+    width: 50%;
+}
