@@ -12,16 +12,12 @@ let requiredScoreElm = document.getElementById("requiredScore");
 // Progress
 let progressBarElm = document.getElementById("progress-bar");
 let offlineElm = document.getElementById("offline-status");
+let startBtnElm = document.getElementById('startBtn');
+let modalElm = document.getElementById('modalMain');
 
-//Menu
-
-let instances1 = M.Modal.init(modalmain1, {
-    dismissible: false,
-    endingTop: "5%"
-});
-instances1.open();
-
-
+const startBtnModal = () =>{
+    modalElm.style.visibility="hidden";
+}
 const networkSatus = () => {
     if (navigator.onLine)
         offlineElm.innerHTML =

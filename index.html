@@ -7,17 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Math on Bytes</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./lib/materialize/css/materialize.css">
 
-    <script src="./lib/materialize/js/materialize.js"></script>
 
 </head>
 
 <body>
-    <div class="container">
 
-        <!-- Airplane-cont    -->
-    </div>
 
     <div class="container">
         <div class="row">
@@ -37,7 +32,7 @@
             </div>
             <!-- Score End -->
             <!-- Question -->
-            <div class="col  s12 center justify">
+            <div class="col  s12 center ">
                 <div id="question-cont">
                     <h1 id="question">
                         99 + 99
@@ -56,12 +51,12 @@
             <div class="determinate " id="progress-bar"></div>
         </div>
         <div class="row center">
-            <p id="requiredScore">Required 🍺 to complete level : 5</p>
+            <h6 id="requiredScore">Required 🍺 to complete level : 5</h6>
         </div>
 
         <!-- Options -->
         <div class="col center">
-            <div class=" center justify">
+            <div class=" center ">
                 <div class=" option-cont" onclick="optionA();">
                     <h5 id="option-A">4</h5>
                 </div>
@@ -83,20 +78,17 @@
 
 
 
-    <!-- Modal Structure -->
-
-    <!-- Modal2 Menu -->
-
+    <!-- 
     <div id="modalmain1" class="modal center brown">
         <div class="modal-content brown center">
             <h5>Math in Bytes</h5>
 
             <p id="offline-status"></p>
 
-            <div id="airplane-cont" class="valign center">
+            <div id="airplane-cont" class=" center">
 
                 <div class="center" id="airplave-toggle">
-                    <div class="switch valign">
+                    <div class="switch ">
                         <label>
                             <img class="airplane-img" src="./assets/turn-airplane-mode-off.svg" />
                             <input class="valign" type="checkbox">
@@ -108,7 +100,6 @@
                 </div>
 
             </div>
-            <!-- Toggle End -->
             <div class="modal-footer center brown">
                 <div class="center">
                     <a onclick="levelCurrentTime=0;levelTime = 30;generate();" class="modal-close waves-effect waves-green btn ">
@@ -122,7 +113,48 @@
                 an extra ❤ </p>
             <p>Are you ready !!! So fire those neurons and rock and roll</p>
 
+        </div> -->
+
+    <div class="modal-main brown" id="modalMain">
+        <div class="center modal-holder">
+            <h5>Math in Bytes</h5>
+
+            <p id="offline-status"></p>
+
+            <div id="airplane-cont" class=" center">
+
+                <div class="center" id="airplave-toggle">
+                    <div class="switch ">
+                        <label>
+                            <img class="airplane-img" src="./assets/turn-airplane-mode-off.svg" />
+                            <input class="valign" type="checkbox">
+                            <span class="lever"></span>
+                            <img class="airplane-img" src="./assets/airplane-mode-on-symbol.svg" />
+
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="center">
+                <a id="startBtn" onclick="startBtnModal();levelCurrentTime=0;levelTime = 30;generate();" style="background:rgb(0, 134, 151);" class="modal-close waves-effect waves-green btn ">
+                    START</a>
+            </div>
+            <div style="justify-content: center"></div>
+            <h5>Instructions</h5>
+            Brain storm your math skills by answer basic arithematic questions as fast as you can. For each correct answer
+                you get one 🍺 & for every wrong asnwer you loose one ❤(life). <br><br>
+            Each level requires a minimum number of 🍺 , to get eligible for next level. An passing each level earn you
+                an extra ❤ <br><br>
+            Are you ready !!! So fire those neurons and rock and roll
+
+
+
+
         </div>
+    </div>
 
 
 
