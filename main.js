@@ -35,7 +35,7 @@ let totalScore = 0;
 let life = 5;
 let score = 0;
 let operandA, operandB;
-let levelTime = 30;
+let levelTime = 9999;
 let levelCurrentTime = 0;
 let level = 0;
 let currentProgress;
