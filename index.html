@@ -37,8 +37,15 @@
                 <!-- Score -->
                 <div class="col center s12">
                     <div class="row">
-                        <div class="col s6 center"> <h5 style="color:#00e1ff" id="score"> Score : 0</h5></div>
-                        <div class="col s6 center ">  <h5 style="color:#ff834a" id="life"> ❤ x3</h5></div>
+                        <div class="col s4 center">
+                            <h5 style="color:#00e1ff" id="score"> 🍺 : 0</h5>
+                        </div>
+                        <div class="col s4 center">
+                            <h5 style="color:#ffae00" id="level"> 📈 x1</h5>
+                        </div>
+                        <div class="col s4 center ">
+                            <h5 style="color:#ff834a" id="life"> ❤ x5</h5>
+                        </div>
                     </div>
                 </div>
                 <!-- Score End -->
@@ -59,7 +66,10 @@
             </div>
             <!-- Progress Bar -->
             <div class="progress" id="progress-bar-cont">
-                <div class="determinate purple" id="progress-bar"></div>
+                <div class="determinate " id="progress-bar"></div>
+            </div>
+            <div class="row center">
+                <p id="requiredScore">Required 🍺 to complete level : 5</p>
             </div>
 
             <!-- Options -->
@@ -82,10 +92,33 @@
 
         </div>
 
+<!-- 
+  Modal Trigger
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
 
-        <!-- Main cont -->
+  <!-- Modal Structure -->
+  <!-- <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
     </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div> -->
+          
+     
+
+
+
 </body>
+<!-- <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(modal1);
+    
+  });
+</script> -->
 <script defer src="./main.js"></script>
 
 </html>
